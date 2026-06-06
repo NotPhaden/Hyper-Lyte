@@ -487,3 +487,47 @@ border-radius:15px;
 display:block;
 margin-bottom:15px;
 }
+const translations = {
+  ro: {
+    nav_services: "Servicii",
+    nav_portfolio: "Portofoliu",
+    nav_contact: "Contact",
+    badge: "✨ STUDIO DIGITAL PREMIUM",
+    hero_title_end: "CARE VÂND",
+    subtitle: "Website-uri premium pentru creatori, artiști și branduri online.",
+    description:
+      "Construim experiențe digitale moderne care transformă vizitatorii în comunități și clienți. Website-uri custom, branding, Discord setup și soluții complete pentru creatorii care vor să iasă în evidență.",
+    discord_sub: "Intră în comunitate",
+    footer: "© 2026 HYPER LYTE"
+  },
+
+  en: {
+    nav_services: "Services",
+    nav_portfolio: "Portfolio",
+    nav_contact: "Contact",
+    badge: "✨ PREMIUM DIGITAL STUDIO",
+    hero_title_end: "THAT SELL",
+    subtitle: "Premium websites for creators, artists and online brands.",
+    description:
+      "We build modern digital experiences that turn visitors into communities and customers. Custom websites, branding, Discord setup and full solutions for creators who want to stand out.",
+    discord_sub: "Join the community",
+    footer: "© 2026 HYPER LYTE"
+  }
+};
+
+function setLang(lang) {
+  localStorage.setItem("lang", lang);
+
+  document.querySelectorAll("[data-i18n]").forEach(el => {
+    const key = el.getAttribute("data-i18n");
+    if (translations[lang][key]) {
+      el.innerText = translations[lang][key];
+    }
+  });
+}
+
+// auto-load saved language
+window.addEventListener("load", () => {
+  const savedLang = localStorage.getItem("lang") || "ro";
+  setLang(savedLang);
+});
