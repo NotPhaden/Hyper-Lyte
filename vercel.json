@@ -1,0 +1,24 @@
+{
+
+  "rewrites": [
+
+    { "source": "/HyperLyte", "destination": "/index.html" }, 
+
+    { "source": "/Portofoliu", "destination": "/portofoliu.html" }, 
+
+    { "source": "/Servicii", "destination": "/servicii.html" }, 
+
+    { "source": "/Contact", "destination": "/contact.html" } 
+
+  ],
+
+  "redirects": [
+
+    { "source": "/", "destination": "/index.html", "permanent": true }
+
+  ]
+
+}
+
+
+
