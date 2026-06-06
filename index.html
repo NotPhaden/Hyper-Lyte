@@ -1,16 +1,12 @@
 <head>
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>HYPER LYTE</title>
 
 <link rel="stylesheet" href="style.css">
-
 <link rel="icon" href="logo.png">
-
 <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;800;900&display=swap" rel="stylesheet">
-
 </head>
 
 <body>
@@ -18,22 +14,23 @@
 <nav class="navbar">
 
 <div class="logo">
-
-<img src="logo.png" alt="HYPER LYTE Logo" class="logo-img">
-
+<img src="logo.png" class="logo-img">
 <div>
 <h3>HYPER</h3>
 <span>LYTE</span>
 </div>
-
 </div>
 
 <div class="menu">
+<a href="index.html" data-i18n="nav_home">Home</a>
+<a href="servicii.html" data-i18n="nav_services">Servicii</a>
+<a href="portofoliu.html" data-i18n="nav_portfolio">Portofoliu</a>
+<a href="contact.html" data-i18n="nav_contact">Contact</a>
+</div>
 
-<a href="servicii.html">Servicii</a>
-<a href="portofoliu.html">Portofoliu</a>
-<a href="contact.html">Contact</a>
-
+<div class="language-switcher">
+<button onclick="setLang('ro')">🇷🇴 RO</button>
+<button onclick="setLang('en')">🇬🇧 EN</button>
 </div>
 
 </nav>
@@ -42,54 +39,38 @@
 
 <div class="hero-left">
 
-<div class="badge">
+<div class="badge" data-i18n="badge">
 ✨ DIGITAL STUDIO PREMIUM
 </div>
 
 <h1>
 DIGITAL
 <span class="glow-text">EXPERIENCES</span>
-THAT SELL
+<span data-i18n="hero_title_end">THAT SELL</span>
 </h1>
 
-<p class="subtitle">
-Website-uri premium pentru creatori, artiști și branduri online.
-</p>
+<p class="subtitle" data-i18n="subtitle"></p>
 
-<p class="description">
-
-Construim experiențe digitale moderne care transformă vizitatorii în comunități și clienți.
-
-Website-uri custom, branding, Discord setup și soluții complete pentru creatorii care vor să iasă în evidență.
-
-</p>
+<p class="description" data-i18n="description"></p>
 
 <div class="links-grid">
 
 <a class="btn discord" href="https://discord.gg/4npDDYhV3f" target="_blank">
 <img src="https://cdn-icons-png.flaticon.com/512/2111/2111370.png">
-<span>Discord <small>Join the community</small></span>
+<span>Discord <small data-i18n="discord_sub">Join the community</small></span>
 </a>
 
 </div>
 
 </div>
 
-<div class="hero-right">
-</div>
+<div class="hero-right"></div>
 
 </section>
 
 <footer>
-
-<div class="footer-mini">
-
-<p>© 2026 HYPER LYTE</p>
-
-</div>
-
+<p data-i18n="footer">© 2026 HYPER LYTE</p>
 </footer>
 
 <script src="script.js"></script>
-
 </body>
